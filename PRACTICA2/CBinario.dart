@@ -10,15 +10,12 @@ void main()
 
   print("Numero: ");
   Dec = int.parse(stdin.readLineSync()!);
-
   while (Dec > 0) 
   {
     Bi = Bi + (Dec % 2) * l;
     Dec = (Dec / 2).floor();
     l = l * 10;
   }
-
   print("");
   print("Hecho, Resultado en binario= $Bi");
-  
 }
